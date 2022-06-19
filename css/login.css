@@ -1,0 +1,49 @@
+.login {
+    z-index: 2000;
+    position: absolute;
+    top: 35vh;
+    display: flex;
+    flex-direction: column;
+}
+.login.showToDo {
+    transition: 1s;
+    top: 15vh;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 15px;
+}
+
+#greeting {
+    font-size: 3vw;
+    animation: greetings 2.5s linear;
+    text-align: center;
+}
+@keyframes greetings {
+    0%, 10%{
+        opacity: 0;
+    }
+    90%, 100%{
+        opacity: 1;
+    }
+}
+#greeting.showToDo {
+    /* transition: 1s; */
+    border-bottom: 3px solid #000;
+    text-align: left;
+    animation: greetings2 1.5s linear;
+}
+@keyframes greetings2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#login-form {
+    position: absolute;
+    left: 10vh;
+    top: 0vh;
+    width: 250px;
+}

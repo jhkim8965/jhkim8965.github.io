@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList-Final</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bgImage.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/todoList.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/shootingStar.css">
+    <script defer src="js/star.js"></script>
+    <script defer src="js/login.js"></script>
+    <script defer src="js/todo.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="background">
+        <section class="night-city">
+            <div class="moon"></div>
+            <div class="cloud"></div>
+            <div class="img">
+                <div class="windows">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+            <div class="stars"></div>
+        </section>
+    </div>
+    <div class="login">
+        <form id="login-form">
+            <input type="text" id="username" required placeholder="Please, Write your name">
+            <input type="submit" value="Log In">
+        </form>
+        <span id="greeting" class="hidden"></span>
+        <div id="todo">
+            <form id="todo-form">
+                <input type="search" id="todo-input" required autocomplete="off">
+                <span>Write your To-Do List</span>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <span id="clock"></span>
+    <div id="weather">
+        <span></span>
+    </div>
+    <i class="shootingstar"></i>
+</body>
+</html>
